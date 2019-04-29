@@ -3,7 +3,7 @@
 let validar_credenciales = (pusuario, pcontrasenna) => {
   let respuesta = false;
   let peticion = $.ajax({
-    url: 'http://localhost:4000/api/validar_credenciales',
+    url: 'https://educational-seeker.herokuapp.com/api/validar_credenciales',
     type: 'post',
     contentType: 'application/x-www-form-urlencoded; charset=utf-8',
     dataType: 'json',
