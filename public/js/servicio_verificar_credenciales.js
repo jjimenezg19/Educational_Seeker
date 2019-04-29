@@ -3,7 +3,7 @@
 function verificar_pin(pPin, pC1) {
   let respuesta = {};
   const peticion = $.ajax({
-    url: 'http://localhost:4000/api/verificar_credenciales',
+    url: 'https://educational-seeker.herokuapp.com/api/verificar_credenciales',
     type: 'post',
     dataType: 'json',
     async: false,
