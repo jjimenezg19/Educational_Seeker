@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>MEP</title>
+    <link href="./imgs/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link href="./css/reset.min.css" rel="stylesheet">
+    <link href="./css/fontawesome/all.min.css" rel="stylesheet">
+    <link href="./css/animate.min.css" rel="stylesheet">
+    <link href="./css/estiloBasico.css" rel="stylesheet">
+    <link href="./css/headerGeneral.css" rel="stylesheet">
+    <link href="./css/footer.css" rel="stylesheet">
+    <link href="./css/mostrar_cards_landing_page.css" rel="stylesheet">
+    <link href="./css/landing_page.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!---se cambio el nombre de las clases del menú de arriba, asi como se cambio la manera en que se
+    visualiza el menu el los header-->
+    <header class="bloqueHeader">
+        <div class="bloqueAdmin bloqueHeader__nombreInstitucion">
+
+            <div class="bloqueLogo__admin bloqueHeader__logo">
+                <img src="./imgs/logo_mep.png" class="imagen_mep">
+            </div>
+        </div>
+        <div class="bloqueHeader__filaArriba">
+            <div class="bloqueHeader__contendorArriba">
+
+
+
+                <div class="header__nav">
+                    <div class="menu__palanca menu__palanca__izq">
+                        <a class="menu__palanca__btn" href="registro_padres.html">Registrarse como padre de familia</a>
+                        <a class="menu__palanca__btn" href="registroCentroLanpage.html">Registrarse como centro
+                            educativo</a>
+                        <a class="btn" href="./inicio_sesion.html">Iniciar sesi&oacute;n</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="mb__15">
+        <section class="mb__15">
+            <div class="text__center">
+                <h1 class="titulo__principal">Top 10 - Centros educativos</h1>
+            </div>
+            <div class="text__center">
+                <div class="contenedor_filtrar_cards">
+                    <div>
+                        <label for="filtrar_cards">B&uacute;squeda por nombre:</label>
+                        <input type="text" id="filtrar_cards" class="text__center">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contenedor_lista_centros" class="top10 mb__15">
+            <div class="datos_izq">
+                <div class="text__center">
+                    <h2>P&uacute;blicos</h2>
+                </div>
+                <div class="mb__15">
+                    <div class="cards_landing_page" id="lista_publicos"></div>
+                </div>
+            </div>
+            <div class="datos_der">
+                <div class="text__center">
+                    <h2>Privados</h2>
+                </div>
+                <div class="mb__15">
+                    <div class="cards_landing_page" id="lista_privados"></div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="footer__cuerpo">
+            <div class="footer__flex">
+                <ul class="footer__lista__top">
+                    <li>
+                        <h4 class="footer__lista__header">Contacto</h4>
+                    </li>
+                    <li><a class="footer__ancla__generica footer__ancla__lista" href='javascript:void(0);'><i
+                                class="fa fas fa-phone"></i> Tel&eacute;fono: 22246688</a></li>
+
+                    <li><a class="footer__ancla__generica footer__ancla__lista" href='javascript:void(0);'><i
+                                class="fa fas fa-envelope-square"></i> Correo electr&oacute;nico:
+                            educacion@ucenfotec.com</a></li>
+                </ul>
+                <ul class="footer__lista__top">
+                    <li>
+                        <h4 class="footer__lista__header">Direcci&oacute;n</h4>
+                    </li>
+                    <li><a class="footer__ancla__generica footer__ancla__lista" href='javascript:void(0);'>San
+                            Jos&eacute;,
+                            Barrio Cristo
+                            Rey</a></li>
+                    <li><a class="footer__ancla__generica footer__ancla__lista" href='javascript:void(0);'>Av 24,
+                            calle
+                            12</a></li>
+                </ul>
+                <section class="footer__social__seccion footer__flex">
+                    <span class="footer__social__traslapar footer__social__conectate">
+                        Conectate <span class="footer__social__pequeno">con</span> nosotros
+                    </span>
+                    <span class="footer__social__traslapar footer__social__iconos__envoltura">
+                        <a class="footer__ancla__generica" href="javascript:void(0);" target="_blank"
+                            title="Pinterest"><i class="fab fa-pinterest-square"></i></a>
+                        <a class="footer__ancla__generica" href="javascript:void(0);" target="_blank"
+                            title="Facebook"><i class="fab fa-facebook-square"></i></a>
+                        <a class="footer__ancla__generica" href="javascript:void(0);" target="_blank" title="Twitter"><i
+                                class="fab fa-twitter-square"></i></a>
+                        <a class="footer__ancla__generica" href="javascript:void(0);" target="_blank"
+                            title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a class="footer__ancla__generica" href="javascript:void(0);" target="_blank" title="Youtube"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="footer__ancla__generica" href="javascript:void(0);" target="_blank"
+                            title="Google Plus"><i class="fab fa-google-plus-square"></i></a>
+                    </span>
+                </section>
+                <section class="footer__inferior__seccion footer__flex">
+                    <div class="footer__inferior__envoltura">
+                        <i class="fa fa-copyright"></i> 2019
+                        <address class="footer__direccion__compania">JAMS</address>
+                        <span class="footer__inferior__derechos"> - Todos los derechos reservados </span>
+                    </div>
+                    <div class="footer__inferior__envoltura">
+                        <a class="footer__ancla__generica" href="javascript:void(0);">Condiciones</a> | <a
+                            class="footer__ancla__generica" href="javascript:void(0);">Privacidad</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/sweetalert2.all.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/combux.js"></script>
+    <script src="./js/servicio_landing_page.js"></script>
+    <script src="./js/servicio_listar_cedu.js"></script>
+    <script src="./js/controlador_index.js"></script>
+
+</body>
+
+</html>

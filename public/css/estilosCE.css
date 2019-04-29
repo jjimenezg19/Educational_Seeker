@@ -1,0 +1,506 @@
+
+
+.mainCE .titulo__secundario{
+  padding: 0;
+  color: #253b80;
+  font-size: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+/*estilos resennia*/
+#bloqueResennia{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#bloqueResennia p{
+  font-style: italic;
+    font-size: 18px;
+}
+
+/*fin estilos resennia*/
+
+
+.bloqueInformacion{
+  background: #f9f9f9; 
+  display: flow-root;
+  height: 350px;
+}
+
+/*Lo agregó Marlon*/
+#tabla__servicios{
+  margin-top: 20px;
+  max-height: 210px;
+  position: relative;
+}
+
+#tabla__actividades{
+  overflow-y: scroll;
+  max-height: 250px;
+}
+
+#tabla__noticias{
+  overflow-y: scroll;
+  max-height: 250px;
+}
+
+
+#tabla__noticias::-webkit-scrollbar-track, #tabla__actividades::-webkit-scrollbar-track, #tabla__servicios::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#tabla__noticias::-webkit-scrollbar, #tabla__actividades::-webkit-scrollbar, #tabla__servicios::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#tabla__noticias::-webkit-scrollbar-thumb, #tabla__actividades::-webkit-scrollbar-thumb, #tabla__servicios::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #78909c;
+}
+
+
+.datoCard {
+  padding-top: 20px;
+  text-align: center; 
+}
+
+/*estilos actividad*/
+#contenedorActividades{
+  float: right
+
+}
+/*estilos actividad*/
+
+
+/*estilos noticias*/
+#contenedorNoticias{
+  float: left;
+  width: 49%;
+
+}
+
+#contenedorActividades{
+  float: right;
+  width: 49%;
+
+}
+
+.titulo{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10%x;
+  position: absolute;
+  top: 16%;
+  /* margin-left: 33%; */
+  left: 39%;
+
+}
+
+
+.noticia {
+  display: inline-table;
+  width: 307px;
+  box-shadow: 0 0 3px #78909c;
+  margin: 19px;
+  border-radius: 12px;
+  height: 200px;
+  background: #fff;
+  text-align: center;
+  padding: 10px;
+  max-width: 320px;
+  /* max-height: 180px; */
+  position: relative;
+}
+
+.actividad {
+  display: inline-table;
+  width: 258px;
+  box-shadow: 0 0 3px #78909c;
+  margin: 19px;
+  border-radius: 12px;
+  height: 200px;
+  background: #fff;
+  text-align: center;
+  padding: 10px;
+  max-width: 320px;
+  /* max-height: 180px; */
+  position: relative;
+}
+
+
+.detalles__actividad {
+  top: 66%;
+  margin-top: 0px;
+  position: absolute;
+  left: 5%;
+}
+
+.dato_card{
+  position: relative;
+  top: 12px;
+  font-size: 12px;
+  /* right: -12px; */
+  /* left: 33px; */
+}
+
+
+.dato_informacion{
+  position: absolute;
+  top: 55%;
+   
+}
+
+
+.actividad_izq{
+  padding-top: 10px;
+  font-size: 15px;
+  text-transform: capitalize;
+ 
+}
+
+.informacion{
+  float: right;
+  /* text-align: center; */
+  font-style: italic;
+  font-size: 14px;
+}
+/*fin estilos noticias*/
+
+/*estilo servicios*/
+.bloqueServicios{
+  background: #179bd7;
+  text-align: center;
+  height: 350px; 
+}
+
+
+.servicio p {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 19px;
+}
+
+.servicio {
+  border: 1px solid #2d3436;
+  padding: 20px;
+  box-shadow: 0 0 3px #78909c;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 12px;
+  background: #fff;
+  width: 300px;
+  height: 100px;
+  position:relative;
+}
+
+.servicio:hover{
+  box-shadow: 0 0 10px #78909c;
+}
+
+.servicio span {
+  font-size: 20px;
+  position: absolute;
+  left: 58;
+  right: 2;
+  /* position: relative; */
+  top: 35px;
+  left: 85px;
+  /* right: 20%; */
+  /* margin-right: 24px; */
+  /* padding-right: 113px; */
+}
+
+
+/*fin estilo servios*/
+/*
+.comentario {
+  background: #fff;
+  width: 237px;
+  box-shadow: 7px 8px 11px #78909c;
+  bottom: 67px;
+  background: #fff;
+  position: relative;
+   top: 20px; 
+  left: 130px;
+  padding: 20px;
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+   color: #000; 
+  font-weight: 800;
+  display: inline-block;
+  margin: 8px;
+}*/
+
+
+/*estilos cita*/
+button.fc-button {
+  background-image: none;
+  background: #17c0eb;
+  background-color: #17c0eb;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  min-width: 50px;
+  min-height: 25px;
+}
+
+.fc-day-header {
+  text-transform: capitalize !important;
+}
+
+button.fc-button:disabled,
+button.fc-button[disabled] {
+  background-image: none;
+  background: #17c0eb;
+  background-color: #17c0eb;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+button.fc-button:hover,
+button.fc-button:active,
+button.fc-button:active:focus,
+button.fc-button:focus {
+  color: #fff;
+  background-image: none;
+  background: #3498db;
+  background-color: #3498db;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border-color: rgb(44, 62, 80);
+}
+
+.fc-toolbar h2 {
+  font-size: 28px;
+  color: #333;
+  font-weight: 400;
+  margin: 16px 0 4px;
+}
+
+.fc-day-grid-event .fc-content {
+  white-space: normal;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.my__60 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.contenedor {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.contenedor.cuerpo {
+  flex-direction: column;
+  height: 100%;
+}
+
+.contenedor.contenido {
+  min-height: 250px;
+  height: -moz-max-content;
+  height: -webkit-max-content;
+  height: max-content;
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+}
+
+.contenedor.contenido section {
+  flex: 27em;
+}
+
+.contenedor.contenido section:nth-child(1) {
+  padding: 0 15px 0 20px;
+  align-self: flex-start;
+}
+
+.contenedor.contenido section:nth-child(2) {
+  padding: 0 20px 0 15px;
+  align-self: flex-start;
+}
+
+#calendario {
+  margin: 0px 75px 0px 75px;
+}
+
+/*fin estilos cita*/
+
+
+/* Comentarios */
+.tblAddComentario.tabla__responsive {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.tblAddComentario table {
+  margin-top: 15px;
+}
+
+.jqte {
+  margin: 0;
+  border: #b9b9b9 1px solid;
+}
+
+.jqte.jqte_focused {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.jqte_tool.jqte_tool_1 .jqte_tool_label {
+  position: relative;
+  display: block;
+  padding: 3px;
+  width: 70px;
+  height: 26px;
+  overflow: hidden;
+}
+
+.tblAddComentario textarea {
+  max-width: 100%;
+}
+/*fin estilos comentarios*/
+
+.bloqueResenna{
+    background: #fff;
+    box-shadow: 0 0 2px #cfcfcf;
+}
+
+
+
+.fc table{
+
+  width: 679px;
+  box-sizing: border-box;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1em;
+}
+
+
+
+.fc-unthemed .fc-content, 
+.fc-unthemed .fc-divider, 
+.fc-unthemed .fc-list-heading td, 
+.fc-unthemed .fc-list-view, 
+.fc-unthemed .fc-popover, 
+.fc-unthemed .fc-row, 
+.fc-unthemed tbody, 
+.fc-unthemed td, 
+.fc-unthemed th, 
+.fc-unthemed thead {
+  border-color: #ddd;
+  padding: 10px 0;
+  /* border-style: groove; */
+  text-align: center;
+
+}
+
+.fc-unthemed td.fc-today {
+  /* background: rgba(255, 96, 0, 0.1); */
+  /* background: #3498db; */
+  /* padding: 10px; */
+  background: rgb(11, 152, 224,0.5);
+}
+
+
+.tituloActividad{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10%x;
+  position: relative;
+  top: 10px;
+  margin-left: 10%;
+}
+
+
+.contenedor_btn{
+  position: absolute;
+  top: 70%;
+  left: 77%;
+
+}
+/*estilos calificación mep */
+#bloqueCalificacion{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#bloqueCalificacion p{
+  font-style: italic;
+    font-size: 18px;
+}
+
+/*fin estilos calificación mep */
+
+.titulo__secundario_servicios{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  /* padding: 14px 49px; */
+  text-align: center;
+  margin: 0;
+  padding-top: 19px;
+}
+
+
+
+.bloqueInformacion_contenedor{
+
+  padding: 20px 0;
+}
+
+
+.bloqueServicios_contenedor,
+.bloqueInformacion_contenedor
+{
+  width: 88%;
+  margin: 0 auto;
+}
+
+
+.dato_fecha{
+  font-size: 13px;
+  position: absolute;
+  left: 47%;
+  top: 28%;
+
+}
+
+.ser__alimentacion{
+  padding: 0 15px;
+}
+
+
+.ser__salud{
+padding: 0 41px;
+}
+
+.ser__estudio{
+  padding: 0px 11px;
+}
+
+
+.ser__musica{
+  padding: 0 10px;
+}
+
+
+
+.ser__cientifico{
+  padding: 0 38px;
+}

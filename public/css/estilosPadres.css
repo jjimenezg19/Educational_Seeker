@@ -1,0 +1,49 @@
+.tituloPrincipal-PF h1{
+    font-size: 33px;
+    margin: 0;
+    text-align: center;
+    background: #253b80;
+    color:#fff;
+    padding: 10px;
+}
+
+
+.bloquePerfil-PF__columIzquierda img{
+    height: 284px;
+    width: 308px;
+}
+
+.bloquePerfil-PF__contenedor{
+    border: 2px solid #253b80;
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    height: 348px;
+}
+
+
+.bloquePerfil-PF__columnas{
+    display: flow-root;
+  
+}
+.bloquePerfil-PF .bloquePerfil-PF__columIzquierda{
+    float: left;
+}
+
+
+
+.bloquePerfil-PF .bloquePerfil-PF__columDerecha{
+    float: right;
+    width: 53%;
+    padding: 10px 0;
+}
+
+
+
+.dato{
+    margin: 15px;
+}
+
+
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>MEP</title>
+    <link href="./imgs/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.min.css">
+    <link rel="stylesheet" href="./css/iniciar_sesion.css" />
+    <link href="./css/fontawesome/all.min.css" rel="stylesheet">
+    <link href="./css/animate.min.css" rel="stylesheet">
+    <link href="./css/headerGeneral.css" rel="stylesheet">
+</head>
+
+
+
+
+<body>
+
+        <header class="bloqueHeader">
+                <div class="bloqueAdmin bloqueHeader__nombreInstitucion">
+        
+                    <div class="bloqueLogo__admin bloqueHeader__logo">
+                       <a href="index.html"><img src="./imgs/logo_mep.png" class="imagen_mep"></a> 
+                    </div>
+                </div>
+                <div class="bloqueHeader__filaArriba">
+                    <div class="bloqueHeader__contendorArriba">
+        
+        
+    
+                    </div>
+                </div>
+            </header>
+
+
+    <main class="contenedor cuerpo">
+        <div class="contenedor contenido">
+            <section><img src="./imgs/logo_mep.png" alt=" "></section>
+            <section>
+                <div class="formulario">
+                    <div>
+                        <h3>Iniciar sesión</h3>
+                    </div>
+                    <div class="controlador">
+                        <label for="txt_correo">Correo electrónico</label>
+                        <input type="text" id="input_usuario">
+                    </div>
+                    <div class="controlador">
+                        <label for="txt_contrasenna">Contraseña</label>
+                        <input type="password" id="txt_contrasenna">
+                    </div>
+                    <div class="controlador">
+                        <button type="button" class="btn" id="boton_ingresar">Ingresar</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="./js/sweetalert2.all.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/funciones_autenticacion.js"></script>
+    <script src="./js/servicio_inicio_sesion.js"></script>
+    <script src="./js/controlador_inicio_sesion.js"></script>
+
+</body>
+
+</html>
