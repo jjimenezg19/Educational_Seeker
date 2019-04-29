@@ -4,7 +4,8 @@
 const Http = require('http');
 
 // Se establece el puerto como punto de origen para acceder a la aplicación.
-const Port = parseInt(process.argv[2] || 3000 || 3001, 10);
+const Port = parseInt(process.env.PORT || process.argv[2] || 3000 || 3001, 10);
+
 
 // Dependencia que permite crear un servidor estático
 const ServeStatic = require('serve-static');
