@@ -29,7 +29,7 @@ app.use(function (req, res, next) {
 var db;
 
 // Connect to the database before starting the application server.
-mongoose.connect('mongodb+srv://pabskun:1pabskun9@proyecto-ev3z1.mongodb.net/cocoa?retryWrites=true', function (err, database) {
+mongoose.connect('mongodb://jams:'+encodeURIComponent('proyecto06')+'@clusterjams-shard-00-00-bwmen.mongodb.net:27017,clusterjams-shard-00-01-bwmen.mongodb.net:27017,clusterjams-shard-00-02-bwmen.mongodb.net:27017/MEP?ssl=true&replicaSet=clusterJAMS-shard-0&authSource=admin&retryWrites=true', function (err, database) {
   if (err) {
     console.log(err);
     process.exit(1);
