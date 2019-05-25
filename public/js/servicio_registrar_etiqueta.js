@@ -2,7 +2,7 @@
 
 let registrar_etiqueta = (pnombre) => {
   let request = $.ajax({
-    url: "http://localhost:4000/api/registrar_etiqueta",
+    url: "https://educational-seeker.herokuapp.com/api/registrar_etiqueta",
     method: "POST",
     data: {
       nombre: pnombre
@@ -39,7 +39,7 @@ let registrar_etiqueta = (pnombre) => {
 let listar_etiquetas = () => {
   let etiquetas_array = [];
   let request = $.ajax({
-    url: "http://localhost:4000/api/listar_etiquetas_en_admin",
+    url: "https://educational-seeker.herokuapp.com/api/listar_etiquetas_en_admin",
     method: "GET",
     dataType: "json",
     contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
@@ -66,7 +66,7 @@ let listar_etiquetas = () => {
 
 let actualizar_etiqueta = (pid, petiqueta) => {
   let request = $.ajax({
-    url: "http://localhost:4000/api/actualizar_etiqueta",
+    url: "https://educational-seeker.herokuapp.com/api/actualizar_etiqueta",
     method: "POST",
     data: {
       _id: pid,
@@ -104,7 +104,7 @@ let actualizar_etiqueta = (pid, petiqueta) => {
 
 let eliminar_etiqueta = (pid) => {
   let request = $.ajax({
-    url: "http://localhost:4000/api/eliminar_etiqueta",
+    url: "https://educational-seeker.herokuapp.com/api/eliminar_etiqueta",
     method: "POST",
     data: {
       _id: pid,

@@ -5,7 +5,7 @@
 let buscar_padre = (pIdPadre) => {
   let buscar_info_padre = [];
   let request = $.ajax({
-    url: "http://localhost:4000/api/buscar_padre/" + pIdPadre,
+    url: "https://educational-seeker.herokuapp.com/api/buscar_padre/" + pIdPadre,
     method: 'GET',
     contentType: "application/x-www-form-urlencoded; charset=utf-8",
     async: false
@@ -29,7 +29,7 @@ let buscar_padre = (pIdPadre) => {
 let buscar_informacion_padre = (pcorreo) => {
   let buscar_informacion_padre = [];
   let request = $.ajax({
-      url: "http://localhost:4000/api/buscar_informacion_padre/" + pcorreo,
+      url: "https://educational-seeker.herokuapp.com/api/buscar_informacion_padre/" + pcorreo,
       method: 'GET',
       contentType: "application/x-www-form-urlencoded; charset=utf-8",
       async: false,

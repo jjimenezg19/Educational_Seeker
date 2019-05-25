@@ -3,7 +3,7 @@
 
 let registrarCentroEducativo = (pNombre, pNombreComercial, pCedulaJuridica, pCorreoCentro, pAnnoFundacion, pResenna, pTelefonoCentro, pFax, pTipoInstitucion, pNiveles, pEtiquetas, pIdProvincia, pIdCanton, pIdDistrito, pDirSennas, pPrimerNombre, pSegundoNombre, pPrimerApellido, pSegundoApellido, pCorreoContacto, pIdentificacionContacto, pDepartamentoContacto, pTelefonoContacto, pfotoCentro) => {
     let request = $.ajax({
-        url: "http://localhost:4000/api/registrar_centro_educativo",
+        url: "https://educational-seeker.herokuapp.com/api/registrar_centro_educativo",
         method: "POST",
         data: {
             nombre: pNombre,

@@ -3,7 +3,7 @@
 let registrar_actividad = (pidCentro, pactividad, pfecha, phora_inicio, pfinaliza,
     plugar,  pdetalles) => {
     let request = $.ajax({
-        url: "http://localhost:4000/api/registrar_actividad",
+        url: "https://educational-seeker.herokuapp.com/api/registrar_actividad",
         method: "POST",
         data: {
             idCentro: pidCentro,
@@ -74,7 +74,7 @@ let listar_todas_actividades = () => {
     }
 
     let request = $.ajax({
-        url: "http://localhost:4000/api/listar_todas_actividades/" + idCentro,
+        url: "https://educational-seeker.herokuapp.com/api/listar_todas_actividades/" + idCentro,
         method: "GET",
         dataType: "json",
         contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
@@ -100,7 +100,7 @@ let listar_todas_actividades = () => {
 let buscar_actividad = (idActividad) => {
     let actividad = [];
     let request = $.ajax({
-        url: "http://localhost:4000/api/buscar_actividad/" + idActividad,
+        url: "https://educational-seeker.herokuapp.com/api/buscar_actividad/" + idActividad,
         method: "GET",
         dataType: "json",
         contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
@@ -122,7 +122,7 @@ let buscar_actividad = (idActividad) => {
 
 let actualizar_actividad = ( pactividad, pfecha, phora_inicio, pfinaliza, plugar,  pdetalles, pidCentro) => {
     let request = $.ajax({
-        url: "http://localhost:4000/api/actualizar_actividad/",
+        url: "https://educational-seeker.herokuapp.com/api/actualizar_actividad/",
         method: "POST",
         data: {
             actividad: pactividad,
@@ -166,7 +166,7 @@ let actualizar_actividad = ( pactividad, pfecha, phora_inicio, pfinaliza, plugar
 
 let eliminar_actividad = (pid) => {
     let request = $.ajax({
-    url: "http://localhost:4000/api/eliminar_actividad",
+    url: "https://educational-seeker.herokuapp.com/api/eliminar_actividad",
     method: "POST",
     data: {
         id: pid

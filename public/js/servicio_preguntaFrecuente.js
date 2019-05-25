@@ -3,7 +3,7 @@
 //Preguntas frecuentes centro educativo
 let post_registrarPreguntaFrecuente = (pPregunta, pRespuesta, pIdCentroEducativo) => {
     let request = $.ajax({
-            url: "http://localhost:4000/api/registrar_preguntaFrecuente_centroEducativo",
+            url: "https://educational-seeker.herokuapp.com/api/registrar_preguntaFrecuente_centroEducativo",
             method: "POST",
             data: {
                 pregunta: pPregunta,
@@ -48,7 +48,7 @@ let post_registrarPreguntaFrecuente = (pPregunta, pRespuesta, pIdCentroEducativo
 let get_ListarPreguntasFrecuentes = (tabla_PreguntaFrecuente, idCentro) => {
 
     let request = $.ajax({
-        url: "http://localhost:4000/api/obtener_preguntaFrecuente_centroEducativo",
+        url: "https://educational-seeker.herokuapp.com/api/obtener_preguntaFrecuente_centroEducativo",
         method: "POST",
         data: {
             idCentroEducativo: idCentro
@@ -156,7 +156,7 @@ let get_ListarPreguntasFrecuentes = (tabla_PreguntaFrecuente, idCentro) => {
 
 let post_registrarPreguntaFrecuenteGeneral = (pPregunta, pRespuesta) => {
     let request = $.ajax({
-            url: "http://localhost:4000/api/registrar_preguntaFrecuente_general",
+            url: "https://educational-seeker.herokuapp.com/api/registrar_preguntaFrecuente_general",
             method: "POST",
             data: {
                 pregunta: pPregunta,
@@ -200,7 +200,7 @@ let post_registrarPreguntaFrecuenteGeneral = (pPregunta, pRespuesta) => {
 let get_ListarPreguntasFrecuentesGenerales = (tabla_PreguntaFrecuente) => {
 
     let request = $.ajax({
-        url: "http://localhost:4000/api/obtener_preguntaFrecuente_general",
+        url: "https://educational-seeker.herokuapp.com/api/obtener_preguntaFrecuente_general",
         method: "GET",
         data: {},
         dataType: "json",
@@ -306,7 +306,7 @@ let get_ListarPreguntasFrecuentesGenerales = (tabla_PreguntaFrecuente) => {
 
 let post_actualizarPreguntaFrecuente = (pPregunta, pRespuesta, pIdPreguntaFrecuente) => {
     let request = $.ajax({
-            url: "http://localhost:4000/api/actualizar_preguntaFrecuente",
+            url: "https://educational-seeker.herokuapp.com/api/actualizar_preguntaFrecuente",
             method: "POST",
             data: {
                 pregunta: pPregunta,
@@ -349,7 +349,7 @@ let post_actualizarPreguntaFrecuente = (pPregunta, pRespuesta, pIdPreguntaFrecue
 let get_obtenerPreguntaFrecuente = (pId) => {
 
     let request = $.ajax({
-        url: "http://localhost:4000/api/obtener_preguntaFrecuente",
+        url: "https://educational-seeker.herokuapp.com/api/obtener_preguntaFrecuente",
         method: "POST",
         data: {
             id: pId
@@ -382,7 +382,7 @@ let get_obtenerPreguntaFrecuente = (pId) => {
 //función para eliminar pregunta frecuente
 let eliminar_preguntaFrecuente = (pId) => {
     let request = $.ajax({
-        url: "http://localhost:4000/api/eliminar_preguntaFrecuente/",
+        url: "https://educational-seeker.herokuapp.com/api/eliminar_preguntaFrecuente/",
         type: "POST",
         data: {
             id: pId

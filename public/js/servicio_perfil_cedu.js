@@ -7,7 +7,7 @@ let get_obtenerPerfil = (pId) => {
   }
   let perfil = {};
   let request = $.ajax({
-    url: "http://localhost:4000/api/obtener_centro_por_id/" + pId,
+    url: "https://educational-seeker.herokuapp.com/api/obtener_centro_por_id/" + pId,
     method: 'GET',
     contentType: "application/x-www-form-urlencoded; charset=utf-8",
     async: false
@@ -33,7 +33,7 @@ let get_obtenerPerfil = (pId) => {
 let listar_calificacion_mep = (pId) => {
   let listar_calificaciones = [];
   let request = $.ajax({
-    url: "http://localhost:4000/api/listar_calificacion_mep/" + pId,
+    url: "https://educational-seeker.herokuapp.com/api/listar_calificacion_mep/" + pId,
     method: 'GET',
     contentType: "application/x-www-form-urlencoded; charset=utf-8",
     async: false
@@ -71,7 +71,7 @@ let asignar_calificacion_padre = (pCalificacion, pComentario, pCallback) => {
 
 
   let request = $.ajax({
-    url: 'http://localhost:4000/api/asignar_calificacion_padre',
+    url: 'https://educational-seeker.herokuapp.com/api/asignar_calificacion_padre',
     method: 'POST',
     data: {
       idPadre: elIdPadre,

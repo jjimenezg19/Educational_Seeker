@@ -7,7 +7,7 @@ let registrar_articulo = (pnombre, pdescripcion, pEnviaResultado) => {
   // La función pEnviaResultado recibe sus propios parámetros (en el controlador): success, msg.
 
   let request = $.ajax({
-    url: "http://localhost:4000/api/registrar_articulo",
+    url: "https://educational-seeker.herokuapp.com/api/registrar_articulo",
     method: "POST",
     data: {
       nombre: pnombre,
@@ -35,7 +35,7 @@ let obtener_articulos = () => {
   let articulos = [];
 
   let request = $.ajax({
-    url: "http://localhost:4000/api/obtener_articulos",
+    url: "https://educational-seeker.herokuapp.com/api/obtener_articulos",
     method: "GET",
     data: {
     },
@@ -60,7 +60,7 @@ let buscar_articulo_por_id = (id) => {
   let articulo = [];
 
   let request = $.ajax({
-    url: "http://localhost:4000/api/buscar_articulo_por_id/" + id,
+    url: "https://educational-seeker.herokuapp.com/api/buscar_articulo_por_id/" + id,
     type: "GET",
     data: {
     },
@@ -84,7 +84,7 @@ let buscar_articulo_por_id = (id) => {
 let actualizar_articulo = (pid, pnombre, pdescripcion) => {
 
   let request = $.ajax({
-    url: "http://localhost:4000/api/actualizar_articulo",
+    url: "https://educational-seeker.herokuapp.com/api/actualizar_articulo",
     method: "POST",
     data: {
       id: pid,
@@ -118,7 +118,7 @@ let actualizar_articulo = (pid, pnombre, pdescripcion) => {
 //funcio para activar o desactivar articulos 
 let activar_desactivar = (id, estado) => {
   let request = $.ajax({
-    url: "http://localhost:4000/api/activar_desactivar_articulo",
+    url: "https://educational-seeker.herokuapp.com/api/activar_desactivar_articulo",
     type: "POST",
     data: {
       id: id,
@@ -162,7 +162,7 @@ let activar_desactivar = (id, estado) => {
 //función para eliminar artículos 
 let eliminar_articulo = (id) => {
   let request = $.ajax({
-    url: "http://localhost:4000/api/eliminar_articulo/" + id,
+    url: "https://educational-seeker.herokuapp.com/api/eliminar_articulo/" + id,
     type: "GET",
     data: {
     },

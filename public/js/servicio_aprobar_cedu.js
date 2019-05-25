@@ -12,10 +12,10 @@ let aprobar_cedu = (pIdCedu, esAprobar) => {
 
 let resultado = false;
 
-let laUrl = 'http://127.0.0.1:4000/api/aprobar_centro_educativo/' + pIdCedu;
+let laUrl = 'https://educational-seeker.herokuapp.com/api/aprobar_centro_educativo/' + pIdCedu;
 if(esAprobar === false){
 	//es rechazar:
-	laUrl = 'http://127.0.0.1:4000/api/rechazar_centro_educativo/' + pIdCedu;
+	laUrl = 'https://educational-seeker.herokuapp.com/api/rechazar_centro_educativo/' + pIdCedu;
 }
 
     let request = $.ajax({

@@ -3,7 +3,7 @@
 function validar_pin(pPin, pC1, pC2) {
   let respuesta = {};
   let peticion = $.ajax({
-    url: 'http://localhost:4000/api/validar_pin',
+    url: 'https://educational-seeker.herokuapp.com/api/validar_pin',
     type: 'post',
     contentType: 'application/x-www-form-urlencoded; charset=utf-8',
     dataType: 'json',

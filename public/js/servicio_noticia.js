@@ -5,7 +5,7 @@ let registrar_noticia = (pidCentro, ptema, pinformacion) => {
         throw new Error('Error al registrar noticia: El identificador no puede estar vacio');
     }
     let request = $.ajax({
-        url: "http://localhost:4000/api/registrar_noticia",
+        url: "https://educational-seeker.herokuapp.com/api/registrar_noticia",
         method: "POST",
         data: {
             idCentro: pidCentro,
@@ -65,7 +65,7 @@ let listar_todas_noticias = () => {
 
     let noticias_arreglo = [];
     let request = $.ajax({
-        url: "http://localhost:4000/api/listar_todas_noticias/" + idCentro,
+        url: "https://educational-seeker.herokuapp.com/api/listar_todas_noticias/" + idCentro,
         method: "GET",
         dataType: "json",
         contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
@@ -96,7 +96,7 @@ let buscar_noticia = (pIdCentro) => {
     }
     let noticia = [];
     let request = $.ajax({
-        url: "http://localhost:4000/api/buscar_noticia/" + pIdCentro,
+        url: "https://educational-seeker.herokuapp.com/api/buscar_noticia/" + pIdCentro,
         method: "GET",
         dataType: "json",
         contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
@@ -124,7 +124,7 @@ let actualizar_noticia = (ptema, pinformacion, pid) => {
         throw new Error('Error al actualizar noticia: El identificador no puede estar vacio');
     }
     let request = $.ajax({
-        url: "http://localhost:4000/api/actualizar_noticia",
+        url: "https://educational-seeker.herokuapp.com/api/actualizar_noticia",
         method: "POST",
         data: {
             tema: ptema,
@@ -169,7 +169,7 @@ let eliminar_noticia = (pid) => {
         throw new Error('Error al eliminar noticia: El identificador no puede estar vacio');
     }
     let request = $.ajax({
-    url: "http://localhost:4000/api/eliminar_noticia",
+    url: "https://educational-seeker.herokuapp.com/api/eliminar_noticia",
     method: "POST",
     data: {
         id: pid

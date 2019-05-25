@@ -3,7 +3,7 @@
 
 let registrar_cita = (pId, pNombre, pApellidos, pTelefono, pCorreo, pfecha, phora, pmotivo, pcomentario) => {
     let request = $.ajax({
-            url: "http://localhost:4000/api/registrar_cita",
+            url: "https://educational-seeker.herokuapp.com/api/registrar_cita",
             type: "POST",
             data: {
                 Nombre: pNombre,
@@ -50,7 +50,7 @@ let listar_citas = (id) => {
     let lista_citas = [];
     let request = $.ajax(
         {
-            url: "http://localhost:4000/api/obtener_citasCentro/" + id,
+            url: "https://educational-seeker.herokuapp.com/api/obtener_citasCentro/" + id,
             type: "GET",
             dataType: "json",
             contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
@@ -72,7 +72,7 @@ let listar_citas = (id) => {
 
 let eliminar_cita = (pId) =>{
     let request = $.ajax({
-        url: "http://localhost:4000/api/eliminar_cita/",
+        url: "https://educational-seeker.herokuapp.com/api/eliminar_cita/",
         type: "POST",
         data: {
             id: pId

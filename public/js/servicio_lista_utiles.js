@@ -3,7 +3,7 @@
 let registrar_lista_utiles = (ptipo,pnombre,panno) => {
 
   let request = $.ajax({
-    url: "http://localhost:4000/api/registrar_lista_utiles",
+    url: "https://educational-seeker.herokuapp.com/api/registrar_lista_utiles",
     method: "POST",
     data: {
       codigo : localStorage.getItem('id'),
@@ -54,7 +54,7 @@ let obtener_lista_utiles = () => {
     codigo = localStorage.getItem('id');
   }
   let request = $.ajax({
-    url: "http://localhost:4000/api/listar_lista_utiles/"+codigo,
+    url: "https://educational-seeker.herokuapp.com/api/listar_lista_utiles/"+codigo,
     method: "GET",
     data: {
     },
@@ -79,7 +79,7 @@ let obtener_lista_utiles = () => {
 let obtener_lista_utiles_todos = () => {
   let coleccion_utiles = [];
   let request = $.ajax({
-    url: "http://localhost:4000/api/listar_lista_utiles_todos",
+    url: "https://educational-seeker.herokuapp.com/api/listar_lista_utiles_todos",
     method: "GET",
     data: {
     },
@@ -104,7 +104,7 @@ let obtener_lista_utiles_todos = () => {
 let agregar_articulo = (pid_lista, pcodigo_articulo, pcantidad) => {
 
   let request = $.ajax({
-    url: "http://localhost:4000/api/agregar_articulo",
+    url: "https://educational-seeker.herokuapp.com/api/agregar_articulo",
     method: "POST",
     data: {
       id_lista: pid_lista,
@@ -132,7 +132,7 @@ let agregar_articulo = (pid_lista, pcodigo_articulo, pcantidad) => {
 let buscar_por_id = (id) => {
   let lista = [];
   let request = $.ajax({
-    url: "http://localhost:4000/api/buscar_lista_id/" + id,
+    url: "https://educational-seeker.herokuapp.com/api/buscar_lista_id/" + id,
     type: "GET",
     data: {
     },
@@ -162,7 +162,7 @@ let buscar_nombre_centro_por_id = (id) => {
   let centro = [];
 
   let request = $.ajax({
-    url: "http://localhost:4000/api/obtener_nombre_centro_por_id/" + id,
+    url: "https://educational-seeker.herokuapp.com/api/obtener_nombre_centro_por_id/" + id,
     type: "GET",
     data: {
     },
@@ -186,7 +186,7 @@ let buscar_nombre_centro_por_id = (id) => {
 let  eliminar_articulo_de_lista_utiles = (id_art) => {
   let id_lista = localStorage.getItem('lista');
   let request = $.ajax({
-    url: "http://localhost:4000/api/eliminar_articulo_lista_utiles" ,
+    url: "https://educational-seeker.herokuapp.com/api/eliminar_articulo_lista_utiles" ,
     type: "POST",
     data: {
       id_lista : id_lista,
@@ -211,7 +211,7 @@ let  eliminar_articulo_de_lista_utiles = (id_art) => {
 let modificar_articulos_de_lista_utiles = (id_art,pcantidad) =>{
   let id_lista = localStorage.getItem('lista');
   let request = $.ajax({
-    url: "http://localhost:4000/api/modificar_articulo_lista_utiles" ,
+    url: "https://educational-seeker.herokuapp.com/api/modificar_articulo_lista_utiles" ,
     type: "POST",
     data: {
       id_lista : id_lista,
@@ -248,7 +248,7 @@ let modificar_articulos_de_lista_utiles = (id_art,pcantidad) =>{
 //funcion para modificar el nombre y el año de la lista de utiles  
 let modificar_lista_utiles = (id_lista,pnombre,panno) =>{
   let request = $.ajax({
-    url: "http://localhost:4000/api/modificar_lista_utiles" ,
+    url: "https://educational-seeker.herokuapp.com/api/modificar_lista_utiles" ,
     type: "POST",
     data: {
       id_lista : id_lista,
@@ -284,7 +284,7 @@ let modificar_lista_utiles = (id_lista,pnombre,panno) =>{
 //funcio para activar o desactivar lista de utiles 
 let  activar_desactivar_lista = (id, estado) => {
   let request = $.ajax({
-    url: "http://localhost:4000/api/activar_desactivar_lista_utiles" ,
+    url: "https://educational-seeker.herokuapp.com/api/activar_desactivar_lista_utiles" ,
     type: "POST",
     data: {
       id : id,
@@ -324,7 +324,7 @@ let  activar_desactivar_lista = (id, estado) => {
 //función para eliminar lista de útiles
 let  eliminar_lista = (id) => {
   let request = $.ajax({
-    url: "http://localhost:4000/api/eliminar_lista_utiles/"+id ,
+    url: "https://educational-seeker.herokuapp.com/api/eliminar_lista_utiles/"+id ,
     type: "GET",
     data: {
     },

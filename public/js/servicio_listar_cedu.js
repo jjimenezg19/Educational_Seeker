@@ -42,7 +42,7 @@ let listarCEdu = (pCallback) => {
 
 let listarCEdu_sin_aprobar = (pCallback) => {
     let request = $.ajax({
-        url: 'http://127.0.0.1:4000/api/obtener_centros_educativos_sin_aprobar',
+        url: 'https://educational-seeker.herokuapp.com/api/obtener_centros_educativos_sin_aprobar',
         method: 'GET',
         dataType: 'json',
         contentType: 'application/x-www-form-urlencoded; charset=UTF-8',

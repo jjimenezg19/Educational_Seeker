@@ -3,7 +3,7 @@
 
 let registrar_rubro = (prubro) => {
   let request = $.ajax({
-    url: "http://localhost:4000/api/registrar_Rubro",
+    url: "https://educational-seeker.herokuapp.com/api/registrar_Rubro",
     method: "POST",
     data: {
       rubro: prubro,
@@ -61,7 +61,7 @@ let listar_rubros = () => {
   let lista_rubros = [];
 
   let request = $.ajax({
-    url: "http://localhost:4000/api/listar_Rubros",
+    url: "https://educational-seeker.herokuapp.com/api/listar_Rubros",
     method: "GET",
     data: {
     },
@@ -84,7 +84,7 @@ let listar_rubros = () => {
 
 let actualizar_rubro = (prubro, pid) => {
   let request = $.ajax({
-    url: "http://localhost:4000/api/actualizar_Rubros",
+    url: "https://educational-seeker.herokuapp.com/api/actualizar_Rubros",
     method: "POST",
     data: {
       rubro: prubro,
@@ -143,7 +143,7 @@ let actualizar_rubro = (prubro, pid) => {
 let agregar_rubro = (pid, prubro_seleccionado) => {
 
   let request = $.ajax({
-    url: "http://localhost:4000/api/agregar_Rubros",
+    url: "https://educational-seeker.herokuapp.com/api/agregar_Rubros",
     method: "POST",
     data: {
       id_Admin: pid,
@@ -186,7 +186,7 @@ let activar_rubro = (pid, pcantidad_activos) => {
 console.log("pcantidad_activos: " + pcantidad_activos);
   if (pcantidad_activos < 11) {
     let request = $.ajax({
-      url: "http://localhost:4000/api/activar_Rubros",
+      url: "https://educational-seeker.herokuapp.com/api/activar_Rubros",
       method: "POST",
       data: {
         id: pid,
@@ -228,7 +228,7 @@ console.log("pcantidad_activos: " + pcantidad_activos);
 
 let desactivar_rubro = (pid) => {
   let request = $.ajax({
-    url: "http://localhost:4000/api/desactivar_Rubros",
+    url: "https://educational-seeker.herokuapp.com/api/desactivar_Rubros",
     method: "POST",
     data: {
       id: pid,
@@ -261,7 +261,7 @@ let desactivar_rubro = (pid) => {
 
 let eliminar_rubro = (pid) => {
   let request = $.ajax({
-    url: "http://localhost:4000/api/eliminar_Rubros",
+    url: "https://educational-seeker.herokuapp.com/api/eliminar_Rubros",
     method: "POST",
     data: {
       id: pid,

@@ -8,7 +8,7 @@ let registrar_servicio = (pnombre, ptipo, pdescripcion, pEnviaResultado) => {
     // La función pEnviaResultado recibe sus propios parámetros (en el controlador): success, msg.
   
     let request = $.ajax({
-      url: "http://localhost:4000/api/registrar_servicio",
+      url: "https://educational-seeker.herokuapp.com/api/registrar_servicio",
       method: "POST",
       data: {
         codigo : localStorage.getItem('id'),
@@ -38,7 +38,7 @@ let registrar_servicio = (pnombre, ptipo, pdescripcion, pEnviaResultado) => {
     let coleccion = [];
 
     let request = $.ajax({
-      url: "http://localhost:4000/api/obtener_servicios_id/" + id_centro,
+      url: "https://educational-seeker.herokuapp.com/api/obtener_servicios_id/" + id_centro,
       type: "GET",
       data: {
       },
@@ -66,7 +66,7 @@ let registrar_servicio = (pnombre, ptipo, pdescripcion, pEnviaResultado) => {
     let nombre;
     
     let request = $.ajax({
-      url: "http://localhost:4000/api/obtener_nombre_centro_id/" + id_centro,
+      url: "https://educational-seeker.herokuapp.com/api/obtener_nombre_centro_id/" + id_centro,
       type: "GET",
       data: {
       },
@@ -90,7 +90,7 @@ let registrar_servicio = (pnombre, ptipo, pdescripcion, pEnviaResultado) => {
   let modificar_servicio = (id_servicio, pnombre, pdescripcion)=>{
 
     let request = $.ajax({
-      url: "http://localhost:4000/api/modificar_servicios" ,
+      url: "https://educational-seeker.herokuapp.com/api/modificar_servicios" ,
       type: "POST",
       data: {
         id_servicio : id_servicio,
@@ -125,7 +125,7 @@ let registrar_servicio = (pnombre, ptipo, pdescripcion, pEnviaResultado) => {
 //función para eliminar servico 
 let  eliminar_servicio = (codigo) => {
   let request = $.ajax({
-    url: "http://localhost:4000/api/eliminar_servicios/"+codigo ,
+    url: "https://educational-seeker.herokuapp.com/api/eliminar_servicios/"+codigo ,
     type: "GET",
     data: {
     },

@@ -2,7 +2,7 @@
 
 let registrar_calificacionMEP = (pidCentro, pestrellasMep, prubro1, pcalificacionRubro1, prubro2, pcalificacionRubro2, prubro3, pcalificacionRubro3, prubro4, pcalificacionRubro4, prubro5, pcalificacionRubro5, prubro6, pcalificacionRubro6, prubro7, pcalificacionRubro7, prubro8, pcalificacionRubro8, prubro9, pcalificacionRubro9, prubro10, pcalificacionRubro10) => {
     let request = $.ajax({
-        url: "http://localhost:4000/api/registrar_calificacionMEP",
+        url: "https://educational-seeker.herokuapp.com/api/registrar_calificacionMEP",
         method: "POST",
         data: {
             idCentro: pidCentro,
@@ -72,7 +72,7 @@ let registrar_calificacionMEP = (pidCentro, pestrellasMep, prubro1, pcalificacio
 let listar_calificacion_CEdu = (pId) => {
     let calificacionMEP = [];
     let request = $.ajax({
-        url: "http://localhost:4000/api/listar_calificacionMEP/" + pId,
+        url: "https://educational-seeker.herokuapp.com/api/listar_calificacionMEP/" + pId,
         method: "GET",
         dataType: "json",
         contentType: 'application/x-www-form-urlencoded; charset=UTF-8',

@@ -3,7 +3,7 @@
 
 let registrar_padre = (pnombre, psegundoNombre, papellido, psegundoApellido, ptipoIdentificacion, pnumIdentificacion, pnacionalidad, pfechaNacimiento, pnumCel, pnumCasa, pEmail, pprovincia, pcanton, pdistrito, pdireccion, pcantidadHijos, pnombreHijo, pedadHijo, pnombreHijo2, pedadHijo2, pnombreHijo3, pedadHijo3, pnombreHijo4, pedadHijo4) => {
   let request = $.ajax({
-    url: "http://localhost:4000/api/registrar_Padre",
+    url: "https://educational-seeker.herokuapp.com/api/registrar_Padre",
     method: "POST",
     data: {
       nombre: pnombre,
@@ -87,7 +87,7 @@ let listar_padres = () => {
   let lista_padres = [];
 
   let request = $.ajax({
-    url: "http://localhost:4000/api/listar_Padres",
+    url: "https://educational-seeker.herokuapp.com/api/listar_Padres",
     method: "GET",
     data: {
     },
@@ -110,7 +110,7 @@ let listar_padres = () => {
 
 let actualizar_padre = (pnombre, psegundoNombre, papellido, psegundoApellido, ptipoIdentificacion, pnumIdentificacion, pnacionalidad, pfechaNacimiento, pnumCel, pnumCasa, pEmail, pprovincia, pcanton, pdistrito, pdireccion, pcantidadHijos, pnombreHijo, pedadHijo, pnombreHijo2, pedadHijo2, pnombreHijo3, pedadHijo3, pnombreHijo4, pedadHijo4, pid) => {
   let request = $.ajax({
-    url: "http://localhost:4000/api/actualizar_Padre",
+    url: "https://educational-seeker.herokuapp.com/api/actualizar_Padre",
     method: "POST",
     data: {
       nombre: pnombre,
